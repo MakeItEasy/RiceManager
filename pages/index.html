@@ -4,13 +4,10 @@
 
 {% block include %}
   <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
-  <!--
-  <script src="{% static '../static/js-lib/sea.js' %}" data-main="{% static 'js/init' %}"></script>
-  <script type="text/javascript" src="{% static 'js/init.js' %}"></script>
-  -->
-  <!--
-  <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
-  -->
+  <script src="{% static 'js/lib/sea.js' %}" data-main="{% static 'js/common/init' %}"></script>
+  <script type="text/javascript">
+    seajs.use('/static/js/index');
+  </script>
 {% endblock %}
 
 {% block title %}Home{% endblock %}
