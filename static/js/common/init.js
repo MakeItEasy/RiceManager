@@ -6,3 +6,5 @@ seajs.config({
     'rm_util': 'js/common/rm_util.js'
   }
 });
+
+alert('init.js');
