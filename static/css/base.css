@@ -1,0 +1,126 @@
+/*
+  The base stylesheet of your application.
+  It should define rules common for all pages.
+*/
+body {
+    background: url("../images/bg-home-tile.jpg") repeat-x scroll 50% 0 #39414A;
+    color: #FFFFFF;
+    font-family: "Microsoft Yahei","Arail","Verdana","Helvetica","sans-serif" !important;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    height: 156px;
+    padding: 0 40px;
+    position: relative;
+}
+
+#contents {
+    background: url("../images/bg_home_content.gif") repeat-x scroll center top #181C21;
+    border-bottom: 1px solid #000000;
+    padding: 4em 40px;
+    height: 460px;
+}
+
+#siteLogo {
+    border: 0 none !important;
+    display: block;
+    position: absolute;
+    top: 59px;
+    font-size: 24px;
+    font-weight: 5px;
+}
+
+#navigation, #footerNavigation {
+    background: url("../images/bg_nav_left.gif") no-repeat scroll left top #0F67A1;
+    clear: right;
+    float: right;
+    margin-top: 75px;
+}
+
+#navigation ul, #footerNavigation ul {
+    background: url("../images/bg_nav_right.gif") no-repeat scroll right top transparent;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 8px;
+    width: 33em;
+}
+
+#navigation ul li, #footerNavigation ul li {
+    background: none repeat scroll 0 0 transparent;
+    border-left: 1px solid #1175AE;
+    border-right: 1px solid #0D5995;
+    float: left;
+    height: 34px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation li a, #footerNavigation li a {
+    color: #EEEEEE;
+    float: left;
+    font-size: 1.3em;
+    line-height: 34px;
+    padding: 0 12px;
+    position: relative;
+    text-decoration: none;
+}
+
+#navigation ul li.menu-first, #footerNavigation ul li.menu-first {
+    border-left: medium none;
+}
+
+#navigation ul li.menu-last, #footerNavigation ul li.menu-last {
+    border-right: medium none;
+}
+
+ul li, ul.menu li, .item-list ul li, li.leaf {
+    background: none repeat scroll 0 0 transparent !important;
+}
+
+a {
+    border-bottom: 0 none;
+    color: #5DB0E6;
+}
+
+a:link, a:visited {
+    color: #568D99;
+    text-decoration: none;
+}
+
+#footer {
+    background: url("../images/bg_footerGrad.jpg") repeat-x scroll center top #0F1923;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 3em;
+    padding: 2.5em 40px;
+}
+
+#footer #footerNavigation {
+    float: right;
+    margin-top: 1em;
+}
+
+.clearfix {
+    display: block;
+}
+
+#footer #credits {
+    float: left;
+    width: 250px;
+}
+
+#footer p {
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 0.5em 0;
+}
+
+#footer p#members {
+    font-size: 1.1em;
+}
+
+

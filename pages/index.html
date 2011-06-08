@@ -1,0 +1,46 @@
+{# The template of the index page #}
+
+{% extends '../templates/base.html' %}
+
+{% block include %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+  <!--
+  <script src="{% static '../static/js-lib/sea.js' %}" data-main="{% static 'js/init' %}"></script>
+  <script type="text/javascript" src="{% static 'js/init.js' %}"></script>
+  -->
+  <!--
+  <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+  -->
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <div class="loginContent">
+    <div class="slidePic">
+      <ul id="lgs_box">
+        <li class="act" style="opacity: 1;"><img alt="" src="../static/images/temp/lgs_1.jpg"></li>
+        <li style="opacity: 0;" class=""><img alt="" src="../static/images/temp/lgs_2.jpg"></li>
+        <li style="opacity: 0;" class=""><img alt="" src="../static/images/temp/lgs_3.jpg"></li>
+      </ul>
+    </div>
+    <div class="loginZone">
+      <strong>请使用邮箱帐号登录，<a href="#" target="_blank">没有邮箱帐号?</a></strong>
+      <ul>
+        <li>
+        <label class="fs" id="efs" style="">邮箱帐号</label><input type="text" name="email" id="email" class="ipt">
+        <span style="display: none;" class="tips" id="tips"></span>
+        </li>
+        <li>             
+          <label class="fs" id="pfs" style="">密码</label>
+          <input type="password" name="password" id="password" class="ipt">
+            <a target="_blank" href="#">忘记密码?</a>
+        </li>
+        <li class="btm">
+          <a id="loginbtn" href="javascript:;" class="btn"><span>登录</span></a>
+          <label for="autoLogin"><input type="checkbox" class="ckb" id="autoLogin" checked="checked">下次自动登录</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}

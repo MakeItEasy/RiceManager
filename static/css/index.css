@@ -1,0 +1,132 @@
+ol, ul, li {
+    list-style: none outside none;
+}
+
+.loginContent {
+    background: url("../../images/common/login_bg.png") no-repeat scroll 0 0 transparent;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+    width: 100%;
+    font-size: 12px;
+}
+
+.loginContent .slidePic {
+    float: left;
+    height: 388px;
+    margin: 1px 0 1px 10px;
+    width: 56%;
+}
+
+.loginContent .slidePic  ul li{
+    margin-left: 0;
+}
+
+.loginContent .slidePic ul li.act {
+    display: block;
+}
+
+.loginContent .loginZone {
+    float: left;
+    height: 332px;
+    overflow: hidden;
+    width: 42%;
+}
+
+.loginContent .loginZone strong {
+    color: #666666;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 68px 18px 0 26px;
+}
+
+.loginContent .loginZone ul {
+    float: left;
+    margin: 32px 18px 0 26px;
+}
+
+.loginContent .loginZone ul li {
+    height: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.loginContent .loginZone ul li label.fs {
+    color: #99BECF;
+    font-size: 18px;
+    left: 11px;
+    position: absolute;
+    top: 8px;
+}
+
+.loginContent .loginZone ul li input.ipt {
+    border: 1px solid #CACACA;
+    font-family: arial;
+    font-size: 18px;
+    height: 38px;
+    padding: 0 11px;
+    width: 211px;
+}
+
+.loginContent .loginZone ul li a {
+    margin-left: 10px;
+}
+
+.loginContent .loginZone ul li.btm {
+    margin-top: 32px;
+}
+
+.loginContent .loginZone ul li a.btn {
+    background: url("../images/common/btn_01.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: "Microsoft Yahei";
+    height: 43px;
+    line-height: 39px;
+    margin-left: 0;
+    margin-right: 3px;
+    text-decoration: none;
+    width: 106px;
+}
+
+.loginContent .loginZone ul li a.btn span {
+    background: url("../images/common/btn_01.png") no-repeat scroll right -43px transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 26px;
+    height: 43px;
+    letter-spacing: 5px;
+    margin-left: 2px;
+    margin-right: -3px;
+    outline: medium none;
+    padding: 0 20px 0 25px;
+}
+
+.loginContent .loginZone ul li.btm input.ckb, .loginContent .loginZone ul li.btm label {
+    color: #666666;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+.loginContent .loginZone ul li.btm label {
+    line-height: 12px;
+    margin-top: 16px;
+}
+
+.loginContent .loginZone ul li.btm input.ckb {
+    margin-left: 16px;
+    margin-right: 4px;
+}
+
+
+
+
+

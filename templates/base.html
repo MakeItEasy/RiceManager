@@ -5,11 +5,57 @@
           "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/text.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/960.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    {% block include %}{% endblock %}
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-    {% block content %}
-    {% endblock %}
+    <div class="container_12">
+      <!-- header area -->
+      <div class="grid_12">
+        <div id="header">
+            <a id="siteLogo">RiceManager</a>
+            <div id="navigation">
+                <ul>
+                  <li class="menu-first"><a>主页</a></li>
+                  <li><a>功能简介</a></li>
+                  <li><a>留言板</a></li>
+                  <li><a>帮助</a></li>
+                  <li class="menu-last"><a>关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      
+      <!-- content area -->
+      <div class="grid_12">
+          <div id="contents">
+            {% block content %}
+            {% endblock %}
+          </div>
+      </div>
+      
+      <!-- footer area -->
+      <div class="grid_12">
+          <div id="footer" class="clearfix">
+              <div id="credits">
+                  <p id="copyright">&copy; 2011 <a href="#">Rice Manager</a></p>
+              	  <p id="members">MakeItEasy Group</p>
+              </div>
+              <div id="footerNavigation">
+                  <ul>
+                    <li class="menu-first"><a>主页</a></li>
+                    <li><a>功能简介</a></li>
+                    <li><a>留言板</a></li>
+                    <li><a>帮助</a></li>
+                    <li class="menu-last"><a>关于我们</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
   </body>
 </html>
