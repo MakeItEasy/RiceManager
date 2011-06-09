@@ -1,4 +1,5 @@
 // init the config of seajs
+/*
 seajs.config({
   base: '/static/',
   alias: {
@@ -6,7 +7,14 @@ seajs.config({
     'rm_util': 'js/common/rm_util.js'
   }
 });
+*/
 
+seajs.config({
+  alias: {
+    'jquery': '../lib/jquery.js',
+    'rm_util': './rm_util.js'
+  }
+});
 
 // index module
 define(function(require, exports, module) {
