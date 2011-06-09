@@ -17,6 +17,15 @@ seajs.config({
   }
 });
 
+alert('init');
+
+define(function(require, exports, module) {
+  
+  alert('jquery' + require('jquery'));
+  alert('util' + require('rm_util'));
+  alert(require('index'));
+});
+
 /*
 // index module
 define(function(require, exports, module) {
