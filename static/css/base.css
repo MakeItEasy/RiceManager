@@ -123,4 +123,7 @@ a:link, a:visited {
     font-size: 1.1em;
 }
 
+.inputFocusClass {
+    background: yellow;
+}
 
