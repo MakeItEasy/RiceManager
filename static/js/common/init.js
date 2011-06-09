@@ -12,7 +12,7 @@ seajs.config({
 define(function(require, exports, module) {
   var $ = require('jquery');
   var rm_util = require('rm_util');
-  
+  alert($);
   
   $(document).ready(function() {
     // the process after the page loaded
