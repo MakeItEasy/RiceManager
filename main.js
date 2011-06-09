@@ -13,7 +13,7 @@ var IndexHandler = Handler.subclass(
   {
     get: function (request) {
       return render(
-        '../pages/index.html',
+        '../static/pages/index.html',
         {
         });
     }

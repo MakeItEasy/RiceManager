@@ -12,7 +12,8 @@ seajs.config({
 seajs.config({
   alias: {
     'jquery': '../lib/jquery.js',
-    'rm_util': './rm_util.js'
+    'rm_util': './rm_util.js',
+    'index': '../index.js'
   }
 });
 
