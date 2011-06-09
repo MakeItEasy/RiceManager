@@ -10,7 +10,8 @@ seajs.config({
 
 // index module
 define(function(require, exports, module) {
-  var $ = require('jquery');
+  // var $ = require('jquery');
+  var $ = require('../lib/jquery');
   var rm_util = require('rm_util');
   alert($);
   
